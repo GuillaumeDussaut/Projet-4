@@ -9,7 +9,7 @@ header{
     height: 63px;
     width: 95%s;
     background:rgba(255, 253, 253, 0.952);
-    box-shadow: px 3px 15px rgba(255, 253, 253, 0.952);
+    box-shadow: 3px 3px 15px rgba(255, 253, 253, 0.952);
     margin:0;
 }
 header img{
