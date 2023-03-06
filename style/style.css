@@ -21,7 +21,6 @@ header img{
 
 }
 .bloc-1{
-    margin:0;
     text-align: center;
     height:50px;
     width: 100%;
@@ -42,6 +41,8 @@ header img{
     width: 218px;
     background:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     border: none;
+    margin-left:70px;
+    margin-right: 70px;
 }
 .vignettes h4{
     margin-top:28px;
@@ -66,4 +67,20 @@ header img{
 }
 .bloc-photos h3, p{
     margin:0;
+}
+footer{
+    background-color: #353535;
+    width:100%;
+    height: auto;
+}
+.logo-footer img{
+    height: auto;
+    width: 90px;
+    filter: invert(100%);
+    margin: 15px;
+}
+.liens-footer a{
+    color: white;
+    display:flex;
+    text-decoration: none;
 }
