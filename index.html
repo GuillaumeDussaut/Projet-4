@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/dadf658606.js"
+      crossorigin="anonymous"
+    ></script>
     <title>OhMyFood</title>
   </head>
   <body>
@@ -13,30 +17,49 @@
     </header>
 
     <div class="bloc-haut">
-      <h5>Paris, Belleville</h5>
-      <h2>Réservez le menu qui vous convient</h2>
-      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-    </div>
+      <aside>
+        <div class="position">
+          <i class="fa-solid fa-location-dot"></i>
+          <h5>Paris, Belleville</h5>
+        </div>
 
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+      </aside>
+      <button>Explorez nos restaurants</button>
+    </div>
     <!-- Fonctionnement -->
     <div class="fonctionnement">
       <h2>Fonctionnement</h2>
       <ol class="liste-top">
         <a href="#">
-          <li>Choisissez un restaurant</li>
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Choisissez un restaurant</p>
+          </li>
         </a>
         <a href="#">
-          <li>Composez votre menu</li>
+          <li>
+            <i class="fa-sharp fa-solid fa-list-ul"></i>
+            <p>Composez votre menu</p>
+          </li>
         </a>
         <a href="#">
-          <li>Dégustez au restaurant</li>
+          <li>
+            <i class="fa-sharp fa-solid fa-store"></i>
+            <p>Dégustez au restaurant</p>
+          </li>
         </a>
       </ol>
     </div>
     <!-- Restaurants -->
     <section class="restaurants">
       <h2>Restaurants</h2>
-      <a href="menu-delice.html">
+
+      <!-- La palette du goût -->
+      <a href="menu-palette.html">
         <article class="card">
           <img
             src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
@@ -46,8 +69,24 @@
             <h3>La palette du goût</h3>
             <p>Ménilmontant</p>
           </div>
+          <i class="fa-regular fa-heart"></i>
         </article>
       </a>
+      <!-- le délice des sens  -->
+      <a href="menu-delice.html">
+        <article class="card">
+          <img
+            src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="Le délice des sens"
+          />
+          <div class="card-content">
+            <h3>Le délice des sens</h3>
+            <p>Folie-Méricourt</p>
+          </div>
+          <i class="fa-regular fa-heart"></i>
+        </article>
+      </a>
+      <!-- La note enchatée -->
       <a href="menu-enchante.html">
         <article class="card">
           <img
@@ -58,8 +97,10 @@
             <h3>La note enchantée</h3>
             <p>Charonne</p>
           </div>
+          <i class="fa-regular fa-heart"></i>
         </article>
       </a>
+      <!--  A la française -->
       <a href="menu-française.html">
         <article class="card">
           <img
@@ -70,18 +111,7 @@
             <h3>A la française</h3>
             <p>Cité Rouge</p>
           </div>
-        </article>
-      </a>
-      <a href="menu-palette.html">
-        <article class="card">
-          <img
-            src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-            alt="Le délice des sens"
-          />
-          <div class="card-content">
-            <h3>Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
-          </div>
+          <i class="fa-regular fa-heart"></i>
         </article>
       </a>
     </section>
@@ -90,11 +120,17 @@
       <div class="logo-footer">
         <img src="" alt="" />
       </div>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="liens-footer">
+        <li>
+          <i class="fa-solid fa-utensils"></i
+          ><a href="#">Proposer un restaurant</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-handshake-angle"></i
+          ><a href="#">Devenir partenaire</a>
+        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </footer>
   </body>
