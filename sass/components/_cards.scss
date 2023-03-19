@@ -1,0 +1,66 @@
+.photo-top img{
+  width: 375px;
+  height: 275px; 
+}
+.menus {
+  font-family:"Shrikhand" sans-serif;
+  border: 2px solid black;
+  margin:0;
+  padding: 10px;
+  width:95%;
+  height: auto;
+  border-radius: 25px 25px 0 0;
+}
+.vignette{
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    min-width: 200px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.165);
+  }
+    i{
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: white;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a:hover {
+      i{color: #99E2D0;}
+      
+    }
+    a::after{
+      content: "";
+      background: #99E2D0;
+      border-radius: 20px 0 0 20px;
+      width: 15%;
+      height: 100%;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      z-index: -1;
+      transition: transform 0.5s;
+      transform-origin: 0 0;
+      transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    }
+    a::after{
+      transform: scaleX(0);
+    }
+    a:hover::after{
+      transform: scaleX(-1);
+    }
+}
