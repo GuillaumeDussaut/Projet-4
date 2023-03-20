@@ -17,6 +17,11 @@
   justify-content: center;
 }
 
+.resto img {
+  width: 340px;
+  height: 231px;
+}
+
 header {
   position: sticky;
   top: 0;
