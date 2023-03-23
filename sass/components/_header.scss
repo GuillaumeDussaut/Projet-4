@@ -5,14 +5,15 @@ header {
     width: 100%;
     background: white;
     display: flex;
+    justify-content: center;
     align-items: center;
     i{
-        padding:10px;
+        margin-left:10px;
         font-size:1.5em;
         
     }
     img{
-        margin-left: 20%;;
+        padding:15px;
         width: 162px;
         height: 44px;
     }

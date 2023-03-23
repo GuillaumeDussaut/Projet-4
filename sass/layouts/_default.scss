@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family:'Roboto', sans-serif ;
+}
 
 .btn-color{
     cursor:pointer;
@@ -21,7 +24,17 @@
     justify-content: center;
 
 }
+.btn-commande:hover{
+    transform: scale(1.05);
+}
 .restaurants{
+    padding:10px;
+    width:100%;
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
     a{
         text-decoration: none;
         color: black;
@@ -40,6 +53,7 @@
     object-fit: cover;
     
 }
+
 .card-content{
     display:flex;
     align-items: center;
@@ -50,9 +64,7 @@
     i{
         margin: 20px;
         font-size: 20px;
-
-    }
-    
+    } 
 }
 }
 .titre-menu{
@@ -67,4 +79,10 @@
     cursor: pointer;  
     color:$colorpink;
 }
+}
+.position{
+    display: flex;
+    justify-content: center;
+    background:#EAEAEA;
+    padding:15px;
 }

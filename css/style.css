@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .btn-color {
   cursor: pointer;
   color: white;
@@ -22,6 +26,18 @@
   justify-content: center;
 }
 
+.btn-commande:hover {
+  transform: scale(1.05);
+}
+
+.restaurants {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .restaurants a {
   text-decoration: none;
   color: black;
@@ -67,6 +83,13 @@
   color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
+.position {
+  display: flex;
+  justify-content: center;
+  background: #EAEAEA;
+  padding: 15px;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -74,14 +97,15 @@ header {
   width: 100%;
   background: white;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 header i {
-  padding: 10px;
+  margin-left: 10px;
   font-size: 1.5em;
 }
 header img {
-  margin-left: 20%;
+  padding: 15px;
   width: 162px;
   height: 44px;
 }
@@ -93,12 +117,22 @@ header img {
 }
 
 .menus {
-  font-family: "Shrikhand" sans-serif;
-  margin: 0;
+  font-family: "Roboto" sans-serif;
+  border: 2px solid black;
   padding: 10px;
   width: 95%;
   height: auto;
   border-radius: 25px 25px 0 0;
+}
+.menus h4 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.titre-menu i:hover {
+  transform: scale(1.15);
 }
 
 .vignette {
@@ -108,18 +142,24 @@ header img {
   border-radius: 25px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.165);
 }
-.vignette a {
+.vignette button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
+  width: 100%;
+  height: 100%;
   color: black;
+  background: transparent;
   min-width: 200px;
-  margin: 0;
   cursor: pointer;
   position: relative;
   border-radius: 15px;
+  border: none;
   padding: 10px;
+  overflow: hidden;
+}
+.vignette button aside {
+  padding: 5px;
 }
 .vignette i {
   height: 30px;
@@ -131,14 +171,14 @@ header img {
   justify-content: center;
   align-items: center;
 }
-.vignette a:hover i {
+.vignette button:hover i {
   color: #99E2D0;
 }
-.vignette a::after {
+.vignette button::after {
   content: "";
   background: #99E2D0;
   border-radius: 25px 0 0 25px;
-  width: 59px;
+  width: 50px;
   height: 70px;
   position: absolute;
   left: 100%;
@@ -148,10 +188,10 @@ header img {
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
-.vignette a::after {
+.vignette button::after {
   transform: scaleX(0);
 }
-.vignette a:hover::after {
+.vignette button:hover::after {
   transform: scaleX(-1);
 }
 
@@ -164,6 +204,9 @@ footer {
 }
 footer .liens-footer a {
   text-decoration: none;
+  color: white;
+}
+footer .liens-footer i {
   color: white;
 }
 
