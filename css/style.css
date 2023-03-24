@@ -41,6 +41,7 @@ body {
 
 .btn-commande {
   margin-top: 50px;
+  padding-bottom: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -238,7 +239,6 @@ header img {
 }
 
 footer {
-  margin-top: 60px;
   background: #353535;
   width: 100%;
   height: auto;
