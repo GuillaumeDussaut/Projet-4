@@ -91,7 +91,8 @@ body{
     justify-content: space-between;
     margin-bottom:20px;
    i{
-    // font-size: 25px;   
+    font-size: 25px;
+    padding:5px;   
 }
     i:hover{
     cursor: pointer;  
@@ -117,6 +118,23 @@ body{
     color:rgba(207, 0, 207, 0.738);
 }
 .icon-vide:hover{
+    background:transparent;
+    color:transparent; 
+    font-size: 25px;  
+    transition:.5s;
+}
+
+// coeurs partie menu
+
+.icon-vide-menu{
+    position: relative;
+    left:38px;
+    background:#F6F6F6;
+}
+.icon-plein-menu{
+    color:rgba(207, 0, 207, 0.738);
+}
+.icon-vide-menu:hover{
     background:transparent;
     color:transparent; 
     font-size: 25px;  

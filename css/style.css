@@ -92,6 +92,10 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
 }
+.titre-menu i {
+  font-size: 25px;
+  padding: 5px;
+}
 .titre-menu i:hover {
   cursor: pointer;
   color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -120,6 +124,23 @@ body {
 }
 
 .icon-vide:hover {
+  background: transparent;
+  color: transparent;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.icon-vide-menu {
+  position: relative;
+  left: 38px;
+  background: #F6F6F6;
+}
+
+.icon-plein-menu {
+  color: rgba(207, 0, 207, 0.738);
+}
+
+.icon-vide-menu:hover {
   background: transparent;
   color: transparent;
   font-size: 25px;
