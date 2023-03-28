@@ -1,11 +1,11 @@
 footer{
-    padding: 10px;
     background:#353535;
     width: 100%;
     height: auto;
     .liens-footer{
         list-style-type:none;
         text-align: left;
+        padding:10px;
         li{
             margin:10px;
         }
@@ -20,8 +20,10 @@ footer{
     }
     .logo-footer{
         filter: invert(100%);
+        
         img{
             width: 137px;
+            padding:15px;
         }
     }
 }
