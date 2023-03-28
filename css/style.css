@@ -217,32 +217,25 @@ body {
 }
 .fonctionnement ol a:hover {
   background: #F5EDFF;
-  transform: scale(1.05);
 }
 .fonctionnement ol a:hover i {
   color: #9356DC;
 }
-
-@media screen and (min-width: 1200px) {
-  .fonctionnement {
-    width: 55%;
-    margin: 20px auto;
-  }
-  .fonctionnement ol {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .restaurants {
-    width: 98%;
-    height: auto;
-    overflow: hidden;
-  }
-  .card-resto {
-    display: flex;
-    flex-direction: row;
-  }
+.fonctionnement .numero {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  color: white;
+  background: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -160px;
+  top: 65px;
+  z-index: 1;
 }
+
 header {
   position: sticky;
   top: 0;
@@ -414,6 +407,11 @@ footer .logo-footer img {
     flex-direction: row;
     justify-content: space-between;
   }
+  .fonctionnement ol .numero {
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+  }
   .restaurants {
     width: 98%;
     height: auto;
@@ -422,6 +420,9 @@ footer .logo-footer img {
   .card-resto {
     display: flex;
     flex-direction: row;
+  }
+  .card-resto .resto {
+    margin-left: 10px;
   }
 }
 

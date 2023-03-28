@@ -189,7 +189,9 @@ body{
         align-items: center;
         flex-direction: column;
         margin-bottom: 40px;
+        
         a{
+            
             background:#F6F6F6;
             display: block;
             align-items: center;
@@ -219,39 +221,27 @@ body{
         }
         a:hover{
             background:#F5EDFF;
-            transform: scale(1.05);
         }
         a:hover i{
             color: #9356DC;
         }
     }
+    .numero{
+        border-radius: 50%;
+        width: 24px;
+        height:24px;
+        color: white;
+        background:#9356DC;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left:-160px;
+        top:65px;
+        z-index:1;       
+    }
 
         
         
     
-}
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 1200px) {
- .fonctionnement{
-    width:55%;
-    margin:20px auto;
-    ol{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
- }
- .restaurants{
-    width: 98%;
-    height: auto;
-    overflow: hidden;
- }
- .card-resto{
-    display:flex;  
-    flex-direction: row;
- }   
 }
