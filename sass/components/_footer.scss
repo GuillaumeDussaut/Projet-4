@@ -1,15 +1,27 @@
 footer{
-
+    padding: 10px;
     background:#353535;
     width: 100%;
     height: auto;
     .liens-footer{
+        list-style-type:none;
+        text-align: left;
+        li{
+            margin:10px;
+        }
         a{
         text-decoration: none;
         color: white;
     }
         i{
+            margin-right: 8px;
             color: white;
+        }
+    }
+    .logo-footer{
+        filter: invert(100%);
+        img{
+            width: 137px;
         }
     }
 }

@@ -10,10 +10,17 @@ body {
 .bloc-haut {
   background: #f6f6f6;
   width: 100%;
-  height: 400px;
+  height: auto;
 }
-.bloc-haut aside {
-  padding: 10px;
+.bloc-haut .partie-btn {
+  padding: 20px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bloc-haut .partie-btn aside {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -280,16 +287,31 @@ header img {
 }
 
 footer {
+  padding: 10px;
   background: #353535;
   width: 100%;
   height: auto;
+}
+footer .liens-footer {
+  list-style-type: none;
+  text-align: left;
+}
+footer .liens-footer li {
+  margin: 10px;
 }
 footer .liens-footer a {
   text-decoration: none;
   color: white;
 }
 footer .liens-footer i {
+  margin-right: 8px;
   color: white;
+}
+footer .logo-footer {
+  filter: invert(100%);
+}
+footer .logo-footer img {
+  width: 137px;
 }
 
 /*# sourceMappingURL=style.css.map */
