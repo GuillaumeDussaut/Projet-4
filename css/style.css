@@ -92,9 +92,6 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.titre-menu i {
-  font-size: 25px;
-}
 .titre-menu i:hover {
   cursor: pointer;
   color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -112,14 +109,20 @@ body {
   border: none;
 }
 
-.icon-plein {
+.icon-vide {
   position: relative;
-  left: 45px;
-  color: transparent;
+  left: 43px;
+  background: white;
 }
 
-.icon-plein:hover {
-  color: #9356DC;
+.icon-plein {
+  color: rgba(207, 0, 207, 0.738);
+}
+
+.icon-vide:hover {
+  background: transparent;
+  color: transparent;
+  font-size: 25px;
   transition: 0.5s;
 }
 
