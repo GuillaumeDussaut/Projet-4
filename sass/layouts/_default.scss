@@ -60,8 +60,8 @@ body{
 }
 
 .restaurants{
-    width:95%;
-    padding:5px;
+    background:#F6F6F6;
+    width:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +73,7 @@ body{
     }
 }
 .resto{
+    background-color: white;
     position: relative;
     border-radius: 25px;
     width: 335px;
@@ -131,8 +132,15 @@ body{
 .position{
     display: flex;
     justify-content: center;
+    align-items: center;
     background:#EAEAEA;
     padding:15px;
+    input{
+        width:110px;
+        background:transparent;
+        border:none;
+        margin-left:5px;
+    }
 }
 .icons-coeur{
     background:transparent;
@@ -182,7 +190,8 @@ body{
         flex-direction: column;
         margin-bottom: 40px;
         a{
-            display: flex;
+            background:#F6F6F6;
+            display: block;
             align-items: center;
             margin-top:20px;
             box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.267);
@@ -194,6 +203,7 @@ body{
             display: flex;
             flex-direction: column;
             li{
+                
                 display: flex;
                 padding:25px;
                 i{
@@ -219,4 +229,29 @@ body{
         
         
     
+}
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+ .fonctionnement{
+    width:55%;
+    margin:20px auto;
+    ol{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+ }
+ .restaurants{
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+ }
+ .card-resto{
+    display:flex;  
+    flex-direction: row;
+ }   
 }

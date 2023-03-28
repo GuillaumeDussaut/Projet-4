@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+ .fonctionnement{
+    width:55%;
+    margin:20px auto;
+    ol{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+ }
+ .restaurants{
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+ }
+ .card-resto{
+    display:flex;  
+    flex-direction: row;
+ }   
+}

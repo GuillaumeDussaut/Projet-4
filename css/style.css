@@ -59,8 +59,8 @@ body {
 }
 
 .restaurants {
-  width: 95%;
-  padding: 5px;
+  background: #F6F6F6;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,6 +72,7 @@ body {
 }
 
 .resto {
+  background-color: white;
   position: relative;
   border-radius: 25px;
   width: 335px;
@@ -129,8 +130,15 @@ body {
 .position {
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #EAEAEA;
   padding: 15px;
+}
+.position input {
+  width: 110px;
+  background: transparent;
+  border: none;
+  margin-left: 5px;
 }
 
 .icons-coeur {
@@ -182,7 +190,8 @@ body {
   margin-bottom: 40px;
 }
 .fonctionnement ol a {
-  display: flex;
+  background: #F6F6F6;
+  display: block;
   align-items: center;
   margin-top: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.267);
@@ -214,6 +223,26 @@ body {
   color: #9356DC;
 }
 
+@media screen and (min-width: 1200px) {
+  .fonctionnement {
+    width: 55%;
+    margin: 20px auto;
+  }
+  .fonctionnement ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .restaurants {
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+  }
+  .card-resto {
+    display: flex;
+    flex-direction: row;
+  }
+}
 header {
   position: sticky;
   top: 0;
@@ -373,6 +402,27 @@ footer .logo-footer {
 footer .logo-footer img {
   width: 137px;
   padding: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .fonctionnement {
+    width: 55%;
+    margin: 20px auto;
+  }
+  .fonctionnement ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .restaurants {
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+  }
+  .card-resto {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
