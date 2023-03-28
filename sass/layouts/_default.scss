@@ -78,8 +78,10 @@ body{
         margin-left:20px;
     }
     i{
-        margin: 20px;
-        font-size: 20px;
+        cursor:pointer;
+        padding: 10px;
+        font-size:20px;
+        
     } 
 }
 }
@@ -101,4 +103,17 @@ body{
     justify-content: center;
     background:#EAEAEA;
     padding:15px;
+}
+.icons-coeur{
+    background:transparent;
+    border: none;
+}
+.icon-plein{
+    position: relative;
+    left: 45px;
+    color:transparent;
+}
+.icon-plein:hover{
+    color:#9356DC;   
+    transition:.5s;
 }
