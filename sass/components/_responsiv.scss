@@ -18,7 +18,8 @@
     }
  }
  .restaurants{
-    width: 98%;
+
+    width: 100%;
     height: auto;
     overflow: hidden;
  }
@@ -28,5 +29,24 @@
     .resto{
         margin-left:10px;
     }
- }   
+ }  
+ .menus{
+    width:50%;
+    padding:100px;
+    left:18%;
+    top:-50px;
+ } 
+ .icon{
+    position:absolute;
+    left:81%;
+    color:transparent;
+    border-radius:50%;
+    width: 30px;
+    height: 30px;
+    text-align:center;
+    i{
+      margin-top:5px;
+      font-size: 20px;
+    }
+  }
 }
