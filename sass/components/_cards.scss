@@ -6,7 +6,21 @@
 }
 
 // partie slide apparition
-
+.entree{
+    .vignette{
+      animation: slidein 1s ease-in;
+    }
+}
+.plat{
+  .vignette{
+    animation: slidein 1.5s ease-in;
+  }
+}
+.dessert{
+  .vignette{
+    animation: slidein 2s ease-in;
+  }
+}
 @keyframes slidein {
   0%{
     transform: skewX(0deg) translateY(500px);
@@ -26,20 +40,45 @@
   width: 93%;
   overflow:hidden;
 }
-.entree{
-    .vignette{
-      animation: slidein 1s ease-in;
-    }
+.back-loader{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background:rgba(255, 255, 255, 0.397);
+  z-index:1;
 }
-.plat{
-  .vignette{
-    animation: slidein 1.5s ease-in;
+.loader{
+  position: relative;
+  top:30%;
+  margin:35%;
+  margin-top: 0;
+  border: 15px solid rgba(255, 255, 255, 0);
+  border-top: 15px solid rgb(183, 0, 255);
+  // border-right: 15px solid purple;
+  border-bottom:15px solid rgb(128, 0, 255);
+  // border-left: 15px solid rgb(237, 140, 238);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:white;
+  // -webkit-animation:spin 2s linear infinite;
+
+  i{
+    font-size: 35px;
   }
-}
-.dessert{
-  .vignette{
-    animation: slidein 2s ease-in;
-  }
+  // @-webkit-keyframes spin {
+  //   0% { -webkit-transform: rotate(0deg); }
+  //   100% { -webkit-transform: rotate(360deg);}
+           
+  // }
+  
+  // @keyframes spin {
+  //   0% { transform: rotate(0deg); }
+  //   100% { transform: rotate(360deg); }
+  // }
 }
 // partie carte classique
 .menus {
