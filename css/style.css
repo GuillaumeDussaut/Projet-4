@@ -61,8 +61,11 @@ body {
 .restaurants {
   background: #F6F6F6;
   width: 100%;
+}
+.restaurants .card-resto {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -72,11 +75,12 @@ body {
 }
 
 .resto {
+  min-width: 280px;
   background-color: white;
   position: relative;
   border-radius: 25px;
-  width: 335px;
-  height: 251px;
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.23);
 }
@@ -107,6 +111,7 @@ body {
   margin-left: 20px;
 }
 .resto .card-content i {
+  border-radius: 50%;
   cursor: pointer;
   padding: 10px;
   font-size: 20px;
@@ -450,12 +455,19 @@ footer .logo-footer img {
     width: 100%;
     height: auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .card-resto {
     display: flex;
-    flex-direction: row;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 55%;
+    height: auto;
   }
   .card-resto .resto {
+    width: 45%;
     margin-left: 10px;
   }
   .menus {

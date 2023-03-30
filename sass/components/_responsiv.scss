@@ -18,16 +18,23 @@
     }
  }
  .restaurants{
-
     width: 100%;
     height: auto;
     overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
  }
  .card-resto{
-    display:flex;  
-    flex-direction: row;
+    display:flex; 
+    align-self: center; 
+    flex-wrap:wrap;
+    width: 55%;
+    height: auto;
+
     .resto{
-        margin-left:10px;
+      width: 45%;
+      margin-left:10px;
     }
  }  
  .menus{
