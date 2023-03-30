@@ -100,7 +100,7 @@
   }
 }
 .vignette{
-  width: 98%;
+  width: 100%;
   height: 80px;
   border-radius:20px;
   box-shadow:2px 2px 12px rgba(0, 0, 0, 0.19);
@@ -110,6 +110,7 @@
 }
 .card{
   cursor: pointer;
+
   text-decoration: none;
   color:black;
   display:flex;

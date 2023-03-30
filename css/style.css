@@ -5,6 +5,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  min-width: 320px;
 }
 
 .bloc-haut {
@@ -108,7 +109,7 @@ body {
   justify-content: space-between;
 }
 .resto .card-content aside {
-  margin-left: 20px;
+  padding: 10px;
 }
 .resto .card-content i {
   border-radius: 50%;
@@ -351,7 +352,7 @@ header img {
 }
 
 .vignette {
-  width: 98%;
+  width: 100%;
   height: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.19);
@@ -436,6 +437,15 @@ footer .logo-footer img {
   padding: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .menus {
+    padding: 15px;
+    width: 60%;
+    margin: 15px auto;
+    top: -70px;
+    align-self: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .fonctionnement {
     width: 55%;
@@ -472,9 +482,8 @@ footer .logo-footer img {
   }
   .menus {
     width: 50%;
-    padding: 100px;
-    left: 18%;
-    top: -50px;
+    padding: 40px;
+    top: -100px;
   }
   .icon {
     position: absolute;

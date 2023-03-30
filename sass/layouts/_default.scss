@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 body{
     font-family:'Roboto', sans-serif ;
+    min-width: 320px;
 
     
 }
@@ -13,7 +15,6 @@ body{
     height:auto;
 
 .partie-btn{
-    // margin-top:40px;
     padding: 20px;
     margin:50px auto;
     display: flex;
@@ -25,7 +26,6 @@ body{
         margin-bottom: 40px;
     }
     aside{
-        // padding:10px;
         display:flex;
         text-align: center;
         flex-direction: column;
@@ -109,7 +109,7 @@ body{
     align-items: center;
     justify-content: space-between;
     aside{
-        margin-left:20px;
+        padding: 10px;
     }
     i{
         border-radius: 50%;

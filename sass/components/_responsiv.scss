@@ -1,5 +1,11 @@
 @media screen and (min-width: 768px) {
-
+   .menus{
+      padding: 15px;
+      width:60%;
+      margin:15px auto;
+      top: -70px;
+      align-self: center;
+   }
 }
 
 @media screen and (min-width: 1200px) {
@@ -39,9 +45,8 @@
  }  
  .menus{
     width:50%;
-    padding:100px;
-    left:18%;
-    top:-50px;
+    padding:40px;
+    top:-100px;
  } 
  .icon{
     position:absolute;
