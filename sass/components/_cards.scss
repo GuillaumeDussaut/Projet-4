@@ -2,85 +2,14 @@
   width: 100%;
   height: 275px; 
   object-fit: cover;
-
 }
 
-// partie slide apparition
-.entree{
-    .vignette{
-      animation: slidein 1s ease-in;
-    }
-}
-.plat{
-  .vignette{
-    animation: slidein 1.5s ease-in;
-  }
-}
-.dessert{
-  .vignette{
-    animation: slidein 2s ease-in;
-  }
-}
-@keyframes slidein {
-  0%{
-    transform: skewX(0deg) translateY(500px);
-  }
-  60%{
-    transform: translateY(0px);
-  }
-  100%{
-    transform: skew(0deg);
-  }
-}
-.entree,
-.plat,
-.dessert{
-  margin:0;
-  padding:10px;
-  width: 93%;
-  overflow:hidden;
-}
-.back-loader{
-  position: absolute;
-  width: 100%;
-  height:100%;
-  background:rgba(255, 255, 255, 0.397);
-  z-index:1;
-}
-.loader{
-  position: relative;
-  top:30%;
-  margin:35%;
-  margin-top: 0;
-  border: 15px solid rgba(255, 255, 255, 0);
-  border-top: 15px solid rgb(183, 0, 255);
-  // border-right: 15px solid purple;
-  border-bottom:15px solid rgb(128, 0, 255);
-  // border-left: 15px solid rgb(237, 140, 238);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:white;
-  // -webkit-animation:spin 2s linear infinite;
-
-  i{
-    font-size: 35px;
-  }
-  // @-webkit-keyframes spin {
-  //   0% { -webkit-transform: rotate(0deg); }
-  //   100% { -webkit-transform: rotate(360deg);}
-           
-  // }
-  
-  // @keyframes spin {
-  //   0% { transform: rotate(0deg); }
-  //   100% { transform: rotate(360deg); }
-  // }
-}
+// 
+// 
 // partie carte classique
+// 
+// 
+
 .menus {
   font-family:"Roboto" sans-serif;
   padding-top:15px;
@@ -90,8 +19,9 @@
   background:#f6f6f6;
   position: relative;
   margin-top: -30px;
-
-  
+  h1{
+    font-family: 'Shrikhand', sans-serif;
+  }
   h4{
     margin-top:40px;
     margin-bottom: 20px;
@@ -106,22 +36,24 @@
   box-shadow:2px 2px 12px rgba(0, 0, 0, 0.19);
   margin:5px;
   overflow: hidden;
-  
 }
 .card{
   cursor: pointer;
-
   text-decoration: none;
   color:black;
   display:flex;
   align-items: center;
   justify-content: space-between;
-  
-  aside{
+  width: 100%;
+  height: auto;
+  .txt-menu{
     width:90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   .prix{
-    width: 10%;
+    width: 30px;
   }
 }
 .card::after{
@@ -132,8 +64,8 @@
 }
 .icon{
   position:absolute;
-  left:85%;
-  color:transparent;
+  left: 87%;
+  color: transparent;
   border-radius:50%;
   width: 30px;
   height: 30px;
@@ -145,13 +77,53 @@
 }
 .card:hover::after{
   transition:0.5s ;
-  width: 60px;
+  width: 80px;
   color:black;
-
 }
 .card:hover .icon{
   transition:0.5s;
   color:$PrimaryColor;
   background:white;
+}
+
+// 
+// 
+// partie slide apparition
+// 
+// 
+
+.entree{
+  .vignette{
+    animation: slidein 1s ease-in;
+  }
+}
+.plat{
+.vignette{
+  animation: slidein 1.5s ease-in;
+}
+}
+.dessert{
+.vignette{
+  animation: slidein 2s ease-in;
+}
+}
+@keyframes slidein {
+0%{
+  transform: skewX(0deg) translateY(500px);
+}
+60%{
+  transform: translateY(0px);
+}
+100%{
+  transform: skew(0deg);
+}
+}
+.entree,
+.plat,
+.dessert{
+  margin:0;
+  padding:10px;
+  width: 93%;
+  overflow:hidden;
 }
 

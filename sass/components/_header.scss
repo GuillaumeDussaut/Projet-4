@@ -4,19 +4,24 @@ header {
     height: auto;
     width: 100%;
     background: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index:1;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.455);
-    i{
-        margin-left:10px;
-        font-size:1.5em;
-        
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            position: absolute;
+            left:15px;
+            color: black;
+            font-size:1.5em;
+        }
+        i:hover{
+            transform: scale(1.05);
+        }
     }
-    img{
-        padding:15px;
+    #logoHeader{
         width: 162px;
-        height: 44px;
+        height: 44px;     
     }
 }
