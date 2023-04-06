@@ -339,6 +339,8 @@ header #logoHeader {
 }
 .card .txt-menu {
   width: 90%;
+}
+.card .txt-menu h3, .card .txt-menu p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -490,6 +492,9 @@ footer .logo-footer img {
     font-size: 0.8em;
     padding: 15px;
     margin-right: 25px;
+  }
+  .fonctionnement ol li:hover {
+    transform: scale(1.15);
   }
   .restaurants {
     width: 100%;

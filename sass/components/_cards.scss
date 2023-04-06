@@ -48,9 +48,11 @@
   height: auto;
   .txt-menu{
     width:90%;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    h3, p{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
   .prix{
     width: 30px;
