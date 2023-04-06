@@ -61,7 +61,7 @@ body {
 .fonctionnement ol li {
   background: #F6F6F6;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.243);
-  width: 90%;
+  width: 270px;
   height: 72.38px;
   border-radius: 25px;
   display: flex;
@@ -414,7 +414,6 @@ header #logoHeader {
 
 footer {
   background: #353535;
-  width: 100%;
   height: auto;
 }
 footer .liens-footer {
@@ -449,25 +448,47 @@ footer .logo-footer img {
     top: -70px;
     align-self: center;
   }
-}
-@media screen and (min-width: 1200px) {
   .fonctionnement {
-    width: 70%;
+    width: 100%;
     margin: 20px auto;
   }
   .fonctionnement ol {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
   }
   .fonctionnement ol li {
     height: auto;
     margin-right: 20px;
-    width: 30%;
+    width: 270px;
+    height: 72.38px;
   }
   .fonctionnement ol li .content-fonctionnement {
     font-size: 0.8em;
     padding: 15px;
+    margin-right: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fonctionnement {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .fonctionnement ol {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .fonctionnement ol li {
     height: auto;
+    margin-right: 20px;
+    width: 322.49px;
+    height: 72.38px;
+  }
+  .fonctionnement ol li .content-fonctionnement {
+    font-size: 0.8em;
+    padding: 15px;
     margin-right: 25px;
   }
   .restaurants {
