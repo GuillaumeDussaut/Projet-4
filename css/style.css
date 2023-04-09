@@ -32,6 +32,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.bloc-haut .partie-btn .description h2 {
+  font-family: "Roboto", Arial, sans-serif;
+}
 
 .position {
   display: flex;
@@ -267,7 +270,6 @@ body {
 header {
   position: sticky;
   top: 0;
-  padding: 10px;
   height: auto;
   width: 100%;
   background: rgb(255, 255, 255);
@@ -289,6 +291,7 @@ header a i:hover {
   transform: scale(1.05);
 }
 header #logoHeader {
+  padding: 5px;
   width: 162px;
   height: 44px;
 }
@@ -328,6 +331,7 @@ header #logoHeader {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.19);
   margin: 5px;
   overflow: hidden;
+  display: flex;
 }
 
 .card {
@@ -336,54 +340,46 @@ header #logoHeader {
   color: black;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   height: auto;
 }
 .card .txt-menu {
-  padding: 10px;
-  width: 90%;
+  align-items: center;
+  width: 60%;
 }
 .card .txt-menu h3, .card .txt-menu p {
+  margin-left: 5px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .card .prix {
-  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  width: 40%;
 }
-
-.card::after {
-  content: "";
-  width: 0px;
-  height: 80px;
-  background: #99E2D0;
-}
-
-.icon {
-  position: absolute;
-  left: 87%;
+.card .icon {
+  width: 0%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: transparent;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-}
-.icon i {
-  margin-top: 5px;
-  font-size: 20px;
-}
-
-.card:hover::after {
-  transition: 0.5s;
-  width: 80px;
-  color: black;
+  visibility: hidden;
 }
 
 .card:hover .icon {
-  transition: 0.5s;
-  color: #99E2D0;
-  background: white;
+  transition: 1.5s;
+  visibility: visible;
+  width: 15%;
+  height: 100%;
+  color: white;
+  background: #99E2D0;
+}
+.card:hover .prix {
+  transition: 1.5s;
+  width: 25%;
 }
 
 .entree .vignette {
@@ -475,6 +471,19 @@ footer .logo-footer img {
     margin-right: 25px;
   }
 }
+.card:hover .icon {
+  transition: 1.5s;
+  visibility: visible;
+  width: 12%;
+  height: 100%;
+  color: white;
+  background: #99E2D0;
+}
+.card:hover .prix {
+  transition: 1.5s;
+  width: 28%;
+}
+
 @media screen and (min-width: 1200px) {
   .fonctionnement {
     width: 80%;
@@ -523,18 +532,17 @@ footer .logo-footer img {
     padding: 40px;
     top: -100px;
   }
-  .icon {
-    position: absolute;
-    left: 85%;
-    color: transparent;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    text-align: center;
+  .card:hover .icon {
+    transition: 1.5s;
+    visibility: visible;
+    width: 7%;
+    height: 100%;
+    color: white;
+    background: #99E2D0;
   }
-  .icon i {
-    margin-top: 5px;
-    font-size: 20px;
+  .card:hover .prix {
+    transition: 1.5s;
+    width: 33%;
   }
   footer {
     display: flex;

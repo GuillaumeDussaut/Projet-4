@@ -39,7 +39,22 @@
       }
    }
 }
+// animation menu
 
+.card:hover{
+  .icon{
+    transition:1.5s;
+    visibility: visible;
+    width: 12%;
+    height: 100%;
+    color:white;
+    background:$PrimaryColor;
+  }
+  .prix{
+    transition:1.5s;
+    width: 28%;
+  }
+}
 
 // desktop 
 
@@ -94,19 +109,21 @@
     padding:40px;
     top:-100px;
  } 
- .icon{
-    position:absolute;
-    left:85%;
-    color:transparent;
-    border-radius:50%;
-    width: 30px;
-    height: 30px;
-    text-align:center;
-    i{
-      margin-top:5px;
-      font-size: 20px;
-    }
-  }
+
+   .card:hover{
+      .icon{
+        transition:1.5s;
+        visibility: visible;
+        width: 7%;
+        height: 100%;
+        color:white;
+        background:$PrimaryColor;
+      }
+      .prix{
+        transition:1.5s;
+        width: 33%;
+      }
+}
   footer{
     display: flex;
     flex-direction: row-reverse;
