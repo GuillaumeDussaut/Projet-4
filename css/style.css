@@ -470,6 +470,17 @@ footer .logo-footer img {
     padding: 15px;
     margin-right: 25px;
   }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  footer .liens-footer {
+    display: flex;
+    margin-right: 40px;
+    font-size: 16px;
+  }
 }
 .card:hover .icon {
   transition: 1.5s;
@@ -547,11 +558,13 @@ footer .logo-footer img {
   footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
   }
   footer .liens-footer {
     display: flex;
+    margin-right: 80px;
+    font-size: 16px;
   }
 }
 .loader-background {
